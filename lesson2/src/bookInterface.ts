@@ -1,13 +1,13 @@
 type Author = {
-  firstName: string,
-  lastName: string,
+  firstName: string;
+  lastName: string;
 }
 
 type Book = {
-  title: string,
-  author: Author,
-  publicationDate: number,
-  genres: string[],
+  title: string;
+  author: Author;
+  publicationDate: number;
+  genres: string[];
 }
 
 const book: Book = {
