@@ -18,7 +18,7 @@ type Peacock = {
   featherLength: number;
 };
 
-type Animal = Elephant | Tiger | Peacock;
+type Animal = Elephant | Tiger | Peacock | Giraffe;
 
 function describeAnimal(animal: Animal): string {
   switch (animal.kind) {
@@ -28,6 +28,8 @@ function describeAnimal(animal: Animal): string {
       return `A tiger can run ${animal.speed} kilometers per hour.`;
     case "peacock":
       return `A peacock's feathers are ${animal.featherLength} meters long.`;
+    case "giraffe":
+      return `This giraffe rules!`;
     default:
       const _exhaustiveCheck: never = animal;
       throw new Error(`Invalid animal ${JSON.stringify(_exhaustiveCheck)}`);
