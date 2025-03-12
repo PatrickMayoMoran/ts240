@@ -1,3 +1,8 @@
+type Giraffe = {
+  kind: "giraffe";
+  neckLength: number;
+}
+
 type Elephant = {
   kind: "elephant";
   weight: number;
@@ -28,3 +33,5 @@ function describeAnimal(animal: Animal): string {
       throw new Error(`Invalid animal ${JSON.stringify(_exhaustiveCheck)}`);
   }
 }
+
+describeAnimal({kind: "giraffe", neckLength: 15});

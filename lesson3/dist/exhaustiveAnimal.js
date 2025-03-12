@@ -12,3 +12,4 @@ function describeAnimal(animal) {
             throw new Error(`Invalid animal ${JSON.stringify(_exhaustiveCheck)}`);
     }
 }
+describeAnimal({ kind: "giraffe", neckLength: 15 });
