@@ -1,4 +1,4 @@
-function isNumber(candidate: any): boolean {
+function isNumber(candidate: any): candidate is number {
   return typeof candidate === 'number';
 }
 
