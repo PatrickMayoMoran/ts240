@@ -4,11 +4,14 @@ type NameOptions = {
   title?: string;
 };
 
-function formatName(options: NameOptions): string {
-  let title = options.title ? options.title + ' ' : "";
-  let firstName = options.firstName ?? "John";
-  let lastName = options.lastName ?? "Doe";
-  return `${title}${firstName} ${lastName}`
+function formatName({
+  firstName = "John",
+  lastName = "Doe",
+  title
+  }: NameOptions): string {
+  title = title ? title + ' ' : "";
+  let formattedName = title + firstName + ' ' + lastName;
+  return formattedName;
 }
 
 const formattedName = formatName({
