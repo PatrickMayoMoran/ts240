@@ -10,14 +10,19 @@ let computer: Device = {
   year: 2023,
 }
 
-let smartphone: Device = {
+let smartphone = {
   manufacturer: "Apple",
   model: "iPhone",
   year: 2020,
+  color: "blue"
 }
 
-smartphone = {
-  manufacturer: "Samsung",
-  model: "SG",
-  year: 2023,
-}
+let anotherSmartPhone: Device = smartphone // allowed, because smartphone structurally matches
+
+// Best practice would be something like - explicitly declare type on variable
+// let moreSmartPhone: Device = {
+//   manufacturer: "Apple",
+//   model: "iPhone",
+//   year: 2020,
+//   color: "blue"
+// }

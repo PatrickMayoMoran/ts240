@@ -8,9 +8,13 @@ let smartphone = {
     manufacturer: "Apple",
     model: "iPhone",
     year: 2020,
+    color: "blue"
 };
-smartphone = {
-    manufacturer: "Samsung",
-    model: "SG",
-    year: 2023,
+let anotherSmartPhone = smartphone; // allowed, because smartphone structurally matches
+// Best practice would be something like:
+let moreSmartPhone = {
+    manufacturer: "Apple",
+    model: "iPhone",
+    year: 2020,
+    color: "blue"
 };
