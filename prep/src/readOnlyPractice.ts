@@ -37,3 +37,13 @@ let otherGuy: FriendWithHome = {
 }
 
 // otherGuy.address.houseNumber = 32; // not allowed!
+
+// Alternatively, freeze the assigned object
+let thatGuy: FriendWithAddress = {
+  name: "that Guy",
+  address: Object.freeze({street: "Juniper Lane", houseNumber: 21}),
+}
+
+// No TypeScript error!
+// thatGuy.address.houseNumber = 17;
+// Yes runtime error - cannot assign to readonly property from using freeze
