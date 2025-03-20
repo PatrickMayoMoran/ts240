@@ -21,3 +21,8 @@ type Handler = {
 
 let rayray: Handler = { sport: "Frisbee", name: "rayray", goodThrower: true };
 let oLinePlayer: OLine = rayray; //allowed, Handler is a subtype of OLine
+
+// no literals with extra properties
+// let dLinePlayer: DLine = {sport: "Frisbee", name: "broiler", goodThrower: true };
+// makes sense - if you have defined a type, why are you using an explicit literal of not that type?
+// "Object literal may only specify known properties and 'goodThrower' does not exist on type DLine
