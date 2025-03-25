@@ -14,4 +14,4 @@ let myStuffy = {
 console.log(howCozy(myQueen));
 console.log(howCozy(myFull));
 console.log(howCozy(myStuffy));
-console.log(howCozy({ type: "no comfy" }));
+// console.log(howCozy({type: "no comfy"}));
